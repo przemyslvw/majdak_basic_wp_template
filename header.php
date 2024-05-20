@@ -14,10 +14,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"> -->
     <style>
         
     </style>
+    <?php wp_head(); ?>
 </head>
 
 <body>
