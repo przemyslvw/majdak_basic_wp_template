@@ -9,10 +9,12 @@
  */
 get_header(); ?>
 <?php 
-if ( is_homw() ) {
+if ( is_home() && locate_template('partials/content-home.php') != '' ) {
     get_template_part('partials/content', 'home');
-} else {
+} elseif ( locate_template('partials/content-page.php') != '' ) {
     get_template_part('partials/content', 'page');
+} else {
+    get_template_part('partials/404');
 }
 ?>
 <?php get_footer(); ?>
