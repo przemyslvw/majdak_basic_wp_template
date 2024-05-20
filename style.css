@@ -1,0 +1,145 @@
+/*
+Theme Name: majdak.online
+Theme URI: http://majdak.online
+Author: majdak.online
+Author URI: http://majdak.online
+Description: majdak.online WordPress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: majdak.online
+*/
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.fullscreen-bg {
+    position: relative;
+    height: 100%;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    /* adjust as needed */
+    height: 110px;
+    /* adjust as needed */
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black background */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-container img {
+    max-height: 170px;
+    /* adjust as needed */
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-inline-start: 0px;
+}
+
+.nav-links li a,
+.navbar-nav .nav-link {
+    color: #97967d !important;
+    /* black color */
+    text-decoration: none;
+    font-size: 30px;
+    /* adjust as needed */
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    /* gold text border */
+    font-weight: bold;
+    /* bold font */
+}
+
+.bg-light {
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 100;
+}
+
+.navbar {
+    display: none;
+}
+
+/* CSS for mobile view */
+@media (max-width: 992px) {
+    .navbar {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links li a,
+    .navbar-nav .nav-link {
+        color: #c5c4b2 !important;
+        font-size: 20px;
+
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    text-align: center;
+    z-index: 100;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer span {
+    color: black;
+}
+
+footer p span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+    footer p {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .separator {
+        display: none;
+    }
+}
