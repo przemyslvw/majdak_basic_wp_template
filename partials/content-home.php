@@ -9,33 +9,32 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#oferta">Oferta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#realizacje">Realizacje</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kariera">Kariera</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontakt">Kontakt</a>
-                </li>
-            </ul>
+            <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'main-menu',
+                    'container' => 'div',
+                    'container_class' => 'collapse navbar-collapse',
+                    'container_id' => 'navbarNav',
+                    'menu_class' => 'navbar-nav ml-auto',
+                ));
+            ?>
         </div>
     </nav>
 
     <div class="nav-container">
-        <ul class="nav-links">
-            <li><a href="/company">Company</a></li>
-            <li><a href="/news">News</a></li>
-        </ul>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'home-menu-1',
+            'menu_class' => 'nav-links',
+        ));
+        ?>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/logo_majdak_online.png" alt="Logo">
-        <ul class="nav-links">
-            <li><a href="/products">Products</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'home-menu-2',
+            'menu_class' => 'nav-links',
+        ));
+        ?>
     </div>
     <video loop muted autoplay class="fullscreen-bg__video">
         <source src="<?php echo get_template_directory_uri(); ?>/assets/desert.mp4" type="video/mp4">
