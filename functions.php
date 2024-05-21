@@ -17,21 +17,21 @@ function create_pages() {
     // Tablica stron do utworzenia
     $pages = array(
         array(
-            'title' => 'About Us',
-            'slug' => 'about-us',
+            'title' => 'Company',
+            'slug' => 'company',
             'template' => '',
             'menu_order' => 1
+        ),
+        array(
+            'title' => 'News',
+            'slug' => 'news',
+            'template' => 'partials/archive.php',
+            'menu_order' => 2
         ),
         array(
             'title' => 'Products',
             'slug' => 'products',
             'template' => '',
-            'menu_order' => 2
-        ),
-        array(
-            'title' => 'News',
-            'slug' => 'news',
-            'template' => '/partials/archive.php',
             'menu_order' => 3
         ),
         array(
@@ -57,7 +57,7 @@ function create_pages() {
                     'ping_status'    => 'closed',
                     'post_content'   => '',
                     'post_status'    => 'publish',
-                    'menu_order'     => $menu_order,
+                    'menu_order'     => $page['menu_order'],
                     'post_author'    => 1,
                     'page_template'  => $page['template']
                 )

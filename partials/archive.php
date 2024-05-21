@@ -1,4 +1,21 @@
 <?php
+/**
+ *
+ * @link https://majdak.online
+ *
+ * @package WordPress
+ * @subpackage majdak_basic_wp_template
+ * @since 1.0.0
+ */
+get_header(); ?>
+
+<?php
+
+/*
+Template Name: All Posts Template
+
+*/
+
 // Zapytanie do bazy danych o ostatnie 10 postów
 $args = array(
     'posts_per_page' => 10
@@ -23,4 +40,5 @@ if ($query->have_posts()) {
 // Zresetuj zapytanie
 wp_reset_postdata();
 ?>
-<div>2</div>
+
+<?php get_footer(); ?>

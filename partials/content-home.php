@@ -28,13 +28,13 @@
 
     <div class="nav-container">
         <ul class="nav-links">
-            <li><a href="#oferta">Oferta</a></li>
-            <li><a href="#realizacje">Realizacje</a></li>
+            <li><a href="/company">Company</a></li>
+            <li><a href="/news">News</a></li>
         </ul>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/logo_majdak_online.png" alt="Logo">
         <ul class="nav-links">
-            <li><a href="#kariera">Kariera</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
     <video loop muted autoplay class="fullscreen-bg__video">
